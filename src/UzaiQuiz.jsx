@@ -319,7 +319,7 @@ export default function UzaiQuiz() {
     if (!lastResult) return;
     const robbedNote = robbedCount > 0 ? ` /${robbedCount}問は正解を奪われました` : "";
     const allNote = allCorrectKnowledge ? " /全問正解の知識で満点なし" : "";
-    const text = `うざいクイズ ${lastResult.score}/${TOTAL}問正解（${lastResult.totalTime}秒）${robbedNote}${allNote}\nクイズで答えは1つです。\nhttps://uzai-quiz.vercel.app`;
+    const text = `うざいクイズ ${lastResult.score}/${TOTAL}問正解（${lastResult.totalTime}秒）${robbedNote}${allNote}\nクイズで答えは1つです。残念でしたねwwww\nhttps://uzai-quiz.vercel.app`;
     const a = document.createElement("a");
     a.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
     a.target = "_blank";
